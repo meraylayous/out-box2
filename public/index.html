@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Out Box</title>
+
+     <!-- font_awesome -->
+     <link rel="stylesheet" href="css/all.min.css">
+     <!-- swiper -->
+      <link rel="stylesheet" href="css/swiper-bundle.min.css">
+     <!-- main css -->
+      <link rel="stylesheet" href="css/output.css">
+</head>
+<body class="overflow-x-hidden bg-gradient-to-b from-Blue_start to-Blue_end ">
+  <!-- header -->
+  <header id="mainHeader" class="fixed top-0 left-0 w-full z-40 transition-all duration-300 ">
+       
+    <div class="px-4 md:px-10 py-4   flex items-center  justify-between 2xl:justify-normal">
+        <a href="index.html" class="flex items-center gap-3">
+          <img src="./assets/logo.png" alt="" class="w-[30px] md:w-[50px] ">
+          <h2  class="font-primary text-[20px]  md:text-[28px] text-primary " >
+            Out Box
+          </h2>
+         
+        </a>
+        <div class="text-primary text-2xl  text-center cursor-pointer mnav__close-btn lg:hidden z-[1000] " >
+            <i class="fa-solid fa-bars-staggered mnav__close-btn-icon text-[28px]"></i>
+        </div>
+        <ul class=" items-center gap-12    hidden lg:flex  2xl:ml-[230px]">
+            <li><a href="#home" class="nav">Home</a></li>
+            <li><a href="web.html" class="nav">Web</a></li>
+            <li><a href="#" class="nav" id="appLink">Application</a></li>
+            <li><a href="https://www.behance.net/outbox12" class="nav" >Our Work</a></li>
+            <li><a href="#about" class="nav">About us </a></li>
+            <li><a href="#footer"  class="nav">Contact us</a></li>
+        </ul>
+    
+    </div>
+    <div class="mobilenav">
+        <div class=" py-2 px-8 mobileshow " >
+            <ul class="flex flex-col items-center  gap-8 ">
+              <li><a href="#home" class="nav">Home</a></li>
+              <li><a href="web.html" class="nav">Web</a></li>
+              <li><a href="#" class="nav" id="appLink">Application</a></li>
+              <li><a href="https://www.behance.net/outbox12" class="nav" >Our Work</a></li>
+              <li><a href="#about" class="nav">About us </a></li>
+              <li><a href="#footer"  class="nav">Contact us</a></li>
+            </ul>
+      
+    
+        </div>
+    </div>
+  </header>
+<!-- hero -->
+    <section id="home" class="mt-[100px] lg:mt-[200px] flex items-center justify-center">
+      <div class=" px-4 md:px-[50px]  lg:px-[100px] flex flex-col xl:flex-row  justify-between   ">
+        <div class="xl:w-1/2">
+          <h1 class="text-[40px] md:text-[80px] text-primary font-primary">
+              Who we are
+          </h1>
+          <p class="text-[20px] md:text-[25px] text-primary mt-5  font-primary ">
+            At Out box, we are more than just developers;
+            we are creators of innovative technological solutions.
+            Our company was founded with an ambitious vision to 
+            empower businesses and individuals to achieve their
+            goals through modern technology.
+          </p>
+          <form class="mt-10 bg-white_20 rounded-2xl py-[2px] px-2  items-center justify-between  flex w-full">
+            <input type="search" placeholder="Serch" class="font-secondary focus:outline-none   bg-transparent  placeholder:text-primary/20 leading-[1] text-[30px] md:text-[40px]  w-[100%] inline-block">
+            <button
+            class="font-secondary  p-2 leading-[1] text-[30px] md:text-[40px]  text-White   rounded-2xl bg-gradient-to-b from-[#9D79F2] to-[#4A42BF] "> Serch </button>
+        </form>
+      </div>
+      <div class="mt-[100px] xl:mt-0" >
+          <div id="animation" class="relative w-[400px] md:w-[600px] h-40 transition-all duration-1000">
+            <!-- المربعات -->
+            <div
+              id="square1"
+              class="absolute top-[30px] left-[0px] w-[90px] md:w-[120px] h-[90px] md:h-[120px] bg-primary rounded-[20px] md:rounded-[28px] transition-all duration-1000 ease-in-out"
+            ></div>
+            <div
+              id="square2"
+              class="absolute top-[0px] right-[50px] w-[75px] md:w-[100px] h-[75px] md:h-[100px] bg-primary rounded-[20px] md:rounded-[28px] transition-all duration-1000 ease-in-out"
+            ></div>
+            <div
+              id="square3"
+              class="absolute bottom-[-200px] left-[50px] w-[80px]  md:w-[110px] h-[80px] md:h-[110px] bg-primary rounded-[20px] md:rounded-[28px] transition-all duration-1000 ease-in-out"
+            ></div>
+            <div
+              id="square4"
+              class="absolute bottom-[-180px] right-[0px] w-[80px]  md:w-[110px] h-[80px] md:h-[110px] bg-primary rounded-[20px] md:rounded-[28px] transition-all duration-1000 ease-in-out"
+            ></div>
+            <!-- الروبوت -->
+            <div  id="robot" class="absolute top-[-50px] left-[40%]  flex justify-center items-center transition-all duration-700 ease-in-out">
+              <img
+                
+                src="./assets/home/robot.png" 
+                class="w-20 h-20 "
+                alt="Robot"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+  <!-- General Manager -->
+  <section class="mt-[180px] md:mt-[250px] xl:mt-[150px]">
+    <div class=" px-4 md:px-[50px]  lg:px-[100px]  ">
+      <!-- text -->
+      <div class=" ">
+        <span class="font-primary text-[28px] md:text-[32px] xl:text-[53px] text-primary   text-center inline-block" >
+          To become the leading technology partner for businesses and individuals by delivering high-quality services that add 
+          <span class="text-Blue">
+            real value .
+          </span>
+        </span>
+      </div>
+      <!-- General Manager  -->
+       <div  class="flex flex-col items-center justify-center mt-5 ">
+        <!-- name -->
+          <h3 class="font-Belinda text-[136px]  text-Blue leading-[1]  ml-32 animate-flash">
+            George
+          </h3>
+          <!-- position -->
+           <h2 class="font-primary text-[30px]  text-primary mr-20 mt-[-20px]">
+            General Manager
+           </h2>
+       </div>
+  
+    </div>
+  </section>
+
+
+  <!-- IT, App Development & UI/UX Design /Web" -->
+  <section class="mt-[100px]">
+    <div class=" px-4 md:px-[50px]  lg:px-[100px]  ">
+      <!-- flex -->
+      <div class="flex flex-col xl:flex-row  justify-between items-center gap-5">
+        <!-- content -->
+          <div class="flex flex-col-reverse md:flex-row md:items-start  xl:w-[70%] ">
+            <!-- content Tabs -->
+            <div class="xl:w-[85%]   ">
+              <div id="content-tab1" class="tab-content   hidden opacity-0 -translate-y-4 transition-all duration-1000 ease-out ">
+                  <div class="bg-primary rounded-[40px] p-8 min-h-[400px] shadow-tabs">
+                      <h1 class="font-primary text-[45px] text-White">
+                        Ui/Ux disgn
+                      </h1>
+                      <p class="font-primary text-[20px] text-White mt-5 leading-[2.4]  md:w-[90%]">
+                        Our UI/UX design services enhance user interaction and satisfaction. We blend creativity with functionality, ensuring interfaces are visually appealing and provide a seamless experience for your audience.
+                      </p>
+                  </div>
+                
+           
+             </div>
+             <div id="content-tab2" class="tab-content   hidden opacity-0 -translate-y-4 transition-all duration-1000 ease-out">
+                <div class="bg-primary rounded-[40px] p-8 min-h-[400px]  shadow-tabs">
+                    <h1 class="font-primary text-[45px] text-White">
+                      Web disgn
+                    </h1>
+                    <p class="font-primary text-[20px] text-White mt-5  leading-[2.4] md:w-[90%]">
+                      We craft visually stunning and user-friendly websites tailored to your brand’s identity. Our designs prioritize usability, responsiveness, and aesthetics to ensure a seamless browsing experience across all devices.
+                    </p>
+                 </div>
+              
+         
+             </div>
+
+             <div id="content-tab3" class="tab-content   hidden opacity-0 -translate-y-4 transition-all duration-1000 ease-out">
+              <div class="bg-primary rounded-[40px] p-8 min-h-[400px]  shadow-tabs">
+                  <h1 class="font-primary text-[45px] text-White">
+                    App disgn
+                  </h1>
+                  <p class="font-primary text-[20px] text-White mt-5  leading-[2.4] md:w-[90%]">
+                    We specialize in creating intuitive and engaging mobile and desktop application designs. From concept to execution, we focus on user-centered design to deliver apps that meet your business goals.
+                  </p>
+               </div>
+            
+       
+             </div>
+
+             <div id="content-tab4" class="tab-content   hidden opacity-0 -translate-y-4 transition-all duration-1000 ease-out">
+              <div class="bg-primary rounded-[40px] p-8 min-h-[400px]  shadow-tabs">
+                  <h1 class="font-primary text-[45px] text-White">
+                      IT Solutions
+                  </h1>
+                  <p class="font-primary text-[20px] text-White mt-5  leading-[2.4] md:w-[90%]">
+                    We offer custom software solutions to solve complex business challenges. Whether it’s automation, integration, or specialized systems, our expert team delivers scalable and efficient solutions tailored to your needs.
+                  </p>
+               </div>
+            
+       
+             </div>
+            </div>
+            <!-- tabs -->
+             <div class="mb-5 md:mb-0">
+              <div class="tabs flex flex-row items-center  md:flex-col gap-3 md:ml-[-70px]">
+                        
+                <button  id="tab1" onclick="changeTab('tab1')" class="tab-link active font-primary  text-[24px] text-White  px-2 py-4 rounded-[20px]     bg-purple md:mt-5 w-[90px]">
+                
+                  Ui/Ux
+                    
+                </button>
+                <button  id="tab2" onclick="changeTab('tab2')" class="tab-link active font-primary  text-[24px] text-White  px-2 py-4 rounded-[20px]     bg-purple w-[90px] ">
+                
+                  Web
+                    
+                </button>
+                <button  id="tab3" onclick="changeTab('tab3')" class="tab-link active font-primary  text-[24px] text-White  px-2 py-4 rounded-[20px]     bg-purple w-[90px] ">
+                
+                  App
+                    
+                </button>
+                <button  id="tab4" onclick="changeTab('tab4')" class="tab-link active font-primary  text-[24px] text-White  px-2 py-4 rounded-[20px]     bg-purple w-[90px] ">
+                
+                  IT
+                    
+                </button>
+              
+               
+               
+                
+            </div>
+             </div>
+          </div>
+          <!-- image -->
+           <div class="xl:w-[30%]">
+              <img src="assets/robot_big.png" alt="" class="w-[500px]">
+           </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Our Mission -->
+  <section class="mt-[100px]" id="about">
+    <div class=" px-4 md:px-[50px]  lg:px-[100px]  ">
+      <!-- text -->
+        <div class="flex flex-col items-center justify-center">
+            <h2 class="font-primary text-[30px] text-primary capitalize">
+                 Our Mission
+            </h2>
+            <p class="font-primary text-[28px] md:text-[32px] xl:text-[53px] text-primary   text-center  mt-10">
+              We create technological solutions that inspire change and drive success.
+            </p>
+
+            <h5 class="font-primary text-[30px] text-primary capitalize mt-20">
+              With US
+           </h5>
+        </div>
+
+        <!-- cards ---1-----    -->
+         <div class="mt-16">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 items-center  gap-5" >
+            <!--  card 1 -->
+            <div class="bg-primary  shadow-cards  p-6 rounded-[40px] flex items-center justify-center text-center min-h-[316px] xl:min-h-[316px] max-h-full xl:w-[80%] ">
+                <p class="font-primary text-White text-[20px] leading-[2.2] ">
+                  Your website is ready in just one month
+                </p>
+            </div>
+          
+             <!--  card 2 -->
+            <div class="bg-primary   shadow-cards  p-6 rounded-[40px] flex items-center justify-center text-center min-h-[316px] xl:min-h-[380px]  max-h-full xl:w-[80%] ">
+             
+              <p class="font-primary text-White text-[20px] leading-[2.2] ">
+                Ability to modify interfaces several times before starting programming
+              </p>
+            </div>
+          
+            <!--  card 3 -->
+            <div class="bg-primary  shadow-cards text-white p-6 rounded-[40px] flex items-center justify-center text-center min-h-[316px] xl:min-h-[380px]  max-h-full xl:w-[80%] ">
+          
+              <p class="font-primary text-White text-[20px] leading-[2.2] ">
+                Continuous maintenance and protection of your website and data
+              </p>
+            </div>
+
+          <!--  card 4 -->
+            <div class="bg-primary  shadow-cards text-white p-6 rounded-[40px] flex items-center justify-center text-center min-h-[316px] xl:min-h-[316px]  max-h-full xl:w-[80%] ">
+              
+              <p class="font-primary text-White text-[20px] leading-[2.2] ">
+                Contact a group of specialized engineers
+              </p>
+            </div>
+          </div>
+          
+         </div>
+         <!-- Board Of Director  -->
+         <div class="mt-20">
+              <h5 class="font-primary text-[30px] text-primary capitalize text-center">
+                Board Of Director
+            </h5>
+            <!-- cards -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5   gap-5 mt-14 xl:mt-[150px]">
+                <!--  card 1 -->
+                <div class="bg-primary  p-6 rounded-[40px]  text-center min-h-[300px] transition-all duration-500 ease-in-out  hover:scale-[1.1] cursor-pointer">
+                  <h3 class="font-primary text-white_30 text-[20px]  ">
+                    Accounts Department Manager
+                  </h3>
+                  <div class="mt-16 flex flex-col items-center justify-center">
+                      <h2 class="font-primary text-White text-[20px]  ">
+                        Dr.    
+                      </h2>
+                      <h2 class="font-primary text-White text-[20px]  mt-1">
+                        Mohammad Mreabe    
+                      </h2>
+                  </div>
+               </div>
+                <!--  card 2 -->
+                <div class="bg-primary  p-6 rounded-[40px]  text-center min-h-[300px]  transition-all duration-500 ease-in-out  hover:scale-[1.1] cursor-pointer">
+                  <h3 class="font-primary text-white_30 text-[20px]  ">
+                    Web Department Manager
+                  </h3>
+                  <div class="mt-16 flex flex-col items-center justify-center">
+                      <h2 class="font-primary text-White text-[20px]  ">
+                        Eng.  
+                      </h2>
+                      <h2 class="font-primary text-White text-[20px]  mt-1">
+                         Meray layous   
+                      </h2>
+                  </div>
+               </div>
+                <!--  card 3 -->
+                <div class="xl:mt-[-80px]">
+                  <div class="bg-primary  p-6 rounded-[40px]  text-center min-h-[300px]  shadow-card_primary transition-all duration-500 ease-in-out  hover:scale-[1.1] cursor-pointer">
+                    <h3 class="font-primary text-white_30 text-[20px]  ">
+                      Founder and Ceo
+                    </h3>
+                    <div class="mt-16 flex flex-col items-center justify-center">
+                        <h2 class="font-primary text-White text-[20px]  ">
+                          Arch.  
+                        </h2>
+                        <h2 class="font-primary text-White text-[20px]  mt-1">
+                            George Khalil 
+                        </h2>
+                    </div>
+                  </div>
+                </div>
+               
+                <!--  card 4 -->
+                <div class="bg-primary  p-6 rounded-[40px]  text-center min-h-[300px]  transition-all duration-500 ease-in-out  hover:scale-[1.1] cursor-pointer">
+                  <h3 class="font-primary text-white_30 text-[20px]  ">
+                    App Department Manager
+                  </h3>
+                  <div class="mt-16 flex flex-col items-center justify-center">
+                      <h2 class="font-primary text-White text-[20px]  ">
+                        Eng.  
+                      </h2>
+                      <h2 class="font-primary text-White text-[20px]  mt-1">
+                         Magd Khalil  
+                      </h2>
+                  </div>
+               </div>
+                <!--  card 5 -->
+                <div class="bg-primary  p-6 rounded-[40px]  text-center min-h-[300px]  transition-all duration-500 ease-in-out  hover:scale-[1.1] cursor-pointer">
+                  <h3 class="font-primary text-white_30 text-[20px]  ">
+                    Media Department Manager
+                  </h3>
+                  <div class="mt-16 flex flex-col items-center justify-center">
+                      <h2 class="font-primary text-White text-[20px]  ">
+                        Eng.  
+                      </h2>
+                      <h2 class="font-primary text-White text-[20px]  mt-1">
+                        Ajwad Khalil
+                      </h2>
+                  </div>
+               </div>
+            </div>
+         </div>
+    </div>
+  </section>
+
+<!-- footer -->
+<footer class="mt-[100px] " id="footer">
+  <div  class=" pb-5  ">
+      <div class=" px-4 md:px-[50px]  lg:px-[100px]  ">
+       
+          <!-- grid content -->
+          <div class="flex flex-wrap flex-col md:flex-row justify-between  gap-x-10 gap-y-5 pb-[70px]">
+              <!-- logo -->
+             <div  >
+              <h2 class="font-primary text-[30px] text-primary capitalize">
+                out box.
+              </h2>
+              <!-- search  -->
+              <form class="mt-12 bg-transparent rounded-[39px] border border-primary/40  items-center justify-between  pl-2    flex w-full">
+                <input type="email" placeholder="Enter email address" class="focus:outline-none font-secondary p-3 bg-transparent  placeholder:text-grey text-[16px]  w-[100%] inline-block">
+                <button
+                class="w-[60px] h-[55px]      rounded-l-[10px] rounded-r-full bg-primary flex justify-center items-center "><i class="fa-solid fa-paper-plane text-White text-[20px]"></i>
+                    
+                </button>
+            </form>
+             </div>
+             <!-- ul 1 -->
+             <div >
+              <h2 class="font-primary text-[20px] text-primary">
+                Quick Links
+              </h2>
+              <ul class="space-y-5 mt-8">
+                 <li class="footer ">
+                  About Company
+                 </li>
+                 <li class="footer">
+                  Out Service
+                 </li>
+                 <li class="footer">
+                  Term & Conditions
+                 </li>
+
+              </ul>
+              </div>
+               <!-- ul 2 -->
+               <div >
+                <h2 class="font-primary text-[20px] text-primary">
+                  Support
+                </h2>
+                <ul class="space-y-5 mt-8">
+                   <li class="footer">
+                    Contact Info
+                   </li>
+                   <li class="footer">
+                    Our Forum
+                   </li>
+                   <li class="footer">
+                    Privacy Policy
+                   </li>
+  
+                </ul>
+              </div>
+           
+          </div>
+
+          <div class="w-full h-[1px] bg-primary/80 my-3"></div>
+          <div  class=" flex items-center gap-10 mt-5">
+            <i class="fa-brands fa-facebook text-[40px] text-primary"></i>
+            <i class="fa-brands fa-instagram text-[40px] text-primary"></i>
+          </div>
+         
+      </div>
+   
+  </div>
+
+
+</footer>
+
+  <!-- scrollToTop -->
+  <div id="scrollToTop" class="fixed bottom-6 right-6 w-12 h-12 bg-white_20  rounded-full flex items-center justify-center opacity-0  transition-opacity duration-300 shadow-lg cursor-pointer ">
+    <img src="assets/logo.png" alt="" class="w-6">
+  </div>
+     
+      
+  =
+    <script src="js/swiper-bundle.min-js.js"></script>
+    <script src="js/animation.js"></script>
+    <script src="js/tabs.js"></script>
+    <script src="js/main.js"></script>
+    
+</body>
+</html>
