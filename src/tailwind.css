@@ -18,6 +18,7 @@
     @font-face {
       font-family: 'Belinda';
       src: url('https://meraylayous.github.io/out-box2/font/Belinda.otf') format('truetype');
+     
     }
 }
 
@@ -59,7 +60,7 @@
 }
 
 .mobilenav.active{
-  @apply top-[82px] md:top-[110px] min-h-[350px]
+  @apply top-[64px] md:top-[85px] min-h-[400px]
 }
 .mobilenav.active .mobileshow{
   @apply opacity-100

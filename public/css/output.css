@@ -511,6 +511,7 @@ video {
     @font-face {
       font-family: 'Belinda';
       src: url('https://meraylayous.github.io/out-box2/font/Belinda.otf') format('truetype');
+     
     }
 .container {
   width: 100%;
@@ -610,13 +611,13 @@ video {
   }
 }
 .mobilenav.active {
-  top: 82px;
-  min-height: 350px;
+  top: 64px;
+  min-height: 400px;
 }
 @media (min-width: 768px) {
 
   .mobilenav.active {
-    top: 110px;
+    top: 85px;
   }
 }
 .mobilenav.active .mobileshow {
@@ -718,11 +719,11 @@ video {
 .right-6 {
   right: 1.5rem;
 }
+.right-\[-20px\] {
+  right: -20px;
+}
 .right-\[0px\] {
   right: 0px;
-}
-.right-\[50px\] {
-  right: 50px;
 }
 .top-0 {
   top: 0px;
@@ -791,8 +792,8 @@ video {
 .mt-\[100px\] {
   margin-top: 100px;
 }
-.mt-\[180px\] {
-  margin-top: 180px;
+.mt-\[200px\] {
+  margin-top: 200px;
 }
 .mt-\[50px\] {
   margin-top: 50px;
@@ -871,6 +872,9 @@ video {
 }
 .w-\[100\%\] {
   width: 100%;
+}
+.w-\[300px\] {
+  width: 300px;
 }
 .w-\[30px\] {
   width: 30px;
