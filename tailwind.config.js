@@ -1,6 +1,7 @@
 
 module.exports = {
-  content: ["./public/**/*.html"],
+ 
+  content: ["./public/**/*.{html,js}"], // ✅ مهم جداً
   theme: {
     extend: {
       colors:{

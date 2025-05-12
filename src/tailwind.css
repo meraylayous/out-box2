@@ -8,16 +8,16 @@
 @layer base {
   @font-face {
       font-family: 'MadaniArabic-Bold';
-      src: url('../../public/font/ALFONT_COM_MADANI-ARABIC-BOLD.TTF') format('truetype');
+      src: url('../font/ALFONT_COM_MADANI-ARABIC-BOLD.TTF') format('truetype');
     }
     @font-face {
       font-family: 'MadaniArabic-Regular';
-      src: url('../../public/font/ALFONT_COM_MADANI-ARABIC-REGULAR.TTF') format('truetype');
+      src: url('../font/ALFONT_COM_MADANI-ARABIC-REGULAR.TTF') format('truetype');
     }
     
     @font-face {
       font-family: 'Belinda';
-      src: url('../../public/font/Belinda.otf') format('truetype');
+      src: url('../font/Belinda.otf') format('truetype');
     }
 }
 
