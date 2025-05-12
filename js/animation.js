@@ -22,15 +22,15 @@ function animateElements() {
 
     // تعديل مواقع المربعات
     square1.style.top = "0px";
-    square1.style.left = isMobile ? "300px" : "500px";
+    square1.style.left = isMobile ? "240px" : "500px";
 
     square2.style.top = "0px";
-    square2.style.right = isMobile ? "300px" : "450px";
+    square2.style.right = isMobile ? "220px" : "450px";
 
     square3.style.bottom = isMobile ? "-60px" : "-200px";
-    square3.style.left = isMobile ? "300px" : "500px";
+    square3.style.left = isMobile ? "240px" : "500px";
 
     square4.style.bottom = isMobile ? "-60px" : "-200px";
-    square4.style.right = isMobile ? "300px" : "450px";
+    square4.style.right = isMobile ? "220px" : "450px";
   }, 1000); // التأخير لمدة ثانية
 }
