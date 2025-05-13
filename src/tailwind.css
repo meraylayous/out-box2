@@ -8,17 +8,17 @@
 @layer base {
   @font-face {
       font-family: 'MadaniArabic-Bold';
-      src: url('https://meraylayous.github.io/out-box2/font/ALFONT_COM_MADANI-ARABIC-BOLD.TTF') format('truetype');
+      src: url('../font/ALFONT_COM_MADANI-ARABIC-BOLD.TTF') format('truetype');
     }
     @font-face {
       font-family: 'MadaniArabic-Regular';
-      src: url('https://meraylayous.github.io/out-box2/font/ALFONT_COM_MADANI-ARABIC-REGULAR.TTF') format('truetype');
+      src: url('../font/ALFONT_COM_MADANI-ARABIC-REGULAR.TTF') format('truetype');
     }
     
     @font-face {
       font-family: 'Belinda';
-      src: url('https://meraylayous.github.io/out-box2/font/Belinda.otf') format('truetype');
-     
+      src: url('../font/Belinda.otf') format('truetype');
+      /* src: url('https://meraylayous.github.io/out-box2/font/Belinda.otf') format('truetype'); */
     }
 }
 
@@ -80,8 +80,19 @@
   .animate-flash {
     animation: flash 3s infinite ease-in-out; 
   }
+  /*animation robote  */
+  @keyframes upDown {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px); /* يتحرك للأعلى قليلاً */
+      }
+    }
 
- 
+    .animate-up-down {
+      animation: upDown 1.5s ease-in-out infinite;
+    }
 /* page profile switch tab */
 .tab-link.active{
   @apply  bg-primary border-[2px] border-white_30 
@@ -89,7 +100,7 @@
 }
  
 .footer{
-  @apply font-secondary text-[16px] text-grey  capitalize hover:pl-5 transition-all duration-300 ease-in-out cursor-pointer
+  @apply font-secondary text-[16px] text-grey  capitalize hover:translate-x-2 transition-all duration-300 ease-in-out cursor-pointer
 }
 
 

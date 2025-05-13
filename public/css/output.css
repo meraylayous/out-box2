@@ -501,17 +501,17 @@ video {
 }
   @font-face {
       font-family: 'MadaniArabic-Bold';
-      src: url('https://meraylayous.github.io/out-box2/font/ALFONT_COM_MADANI-ARABIC-BOLD.TTF') format('truetype');
+      src: url('../font/ALFONT_COM_MADANI-ARABIC-BOLD.TTF') format('truetype');
     }
     @font-face {
       font-family: 'MadaniArabic-Regular';
-      src: url('https://meraylayous.github.io/out-box2/font/ALFONT_COM_MADANI-ARABIC-REGULAR.TTF') format('truetype');
+      src: url('../font/ALFONT_COM_MADANI-ARABIC-REGULAR.TTF') format('truetype');
     }
     
     @font-face {
       font-family: 'Belinda';
-      src: url('https://meraylayous.github.io/out-box2/font/Belinda.otf') format('truetype');
-     
+      src: url('../font/Belinda.otf') format('truetype');
+      /* src: url('https://meraylayous.github.io/out-box2/font/Belinda.otf') format('truetype'); */
     }
 .container {
   width: 100%;
@@ -639,6 +639,18 @@ video {
 .animate-flash {
     animation: flash 3s infinite ease-in-out; 
   }
+/*animation robote  */
+@keyframes upDown {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px); /* يتحرك للأعلى قليلاً */
+      }
+    }
+.animate-up-down {
+      animation: upDown 1.5s ease-in-out infinite;
+    }
 /* page profile switch tab */
 .tab-link.active {
   border-width: 2px;
@@ -658,7 +670,8 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer:hover {
-  padding-left: 1.25rem;
+  --tw-translate-x: 0.5rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 /* scrollbar body */
 /* تخصيص الشريط العمودي */
@@ -767,9 +780,6 @@ video {
 }
 .mt-10 {
   margin-top: 2.5rem;
-}
-.mt-12 {
-  margin-top: 3rem;
 }
 .mt-14 {
   margin-top: 3.5rem;
@@ -1016,6 +1026,9 @@ video {
 .bg-primary\/80 {
   background-color: rgb(25 19 70 / 0.8);
 }
+.bg-primary\/90 {
+  background-color: rgb(25 19 70 / 0.9);
+}
 .bg-purple {
   --tw-bg-opacity: 1;
   background-color: rgb(112 104 170 / var(--tw-bg-opacity, 1));
@@ -1159,6 +1172,9 @@ video {
 .text-\[65px\] {
   font-size: 65px;
 }
+.uppercase {
+  text-transform: uppercase;
+}
 .capitalize {
   text-transform: capitalize;
 }
@@ -1183,13 +1199,13 @@ video {
   --tw-text-opacity: 1;
   color: rgb(25 19 70 / var(--tw-text-opacity, 1));
 }
+.text-secondary {
+  --tw-text-opacity: 1;
+  color: rgb(213 220 240 / var(--tw-text-opacity, 1));
+}
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
-}
-.text-white_30 {
-  --tw-text-opacity: 1;
-  color: rgb(237 240 250 / var(--tw-text-opacity, 1));
 }
 .opacity-0 {
   opacity: 0;
@@ -1505,10 +1521,6 @@ video {
 
   .xl\:w-\[70\%\] {
     width: 70%;
-  }
-
-  .xl\:w-\[80\%\] {
-    width: 80%;
   }
 
   .xl\:w-\[85\%\] {

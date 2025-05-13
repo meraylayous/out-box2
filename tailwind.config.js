@@ -6,11 +6,14 @@ module.exports = {
     extend: {
       colors:{
         primary: '#191346',
+        secondary:'#d5dcf0',
         white_20:'#FCFCFF',
         white_30:'#EDF0FA',
+        
         White:'#FFFFFF',
         Blue:'#594CC8', 
         purple:'#7068AA',
+        
         grey:'#15181E99',
       
 
